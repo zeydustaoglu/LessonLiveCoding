@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include partials/head %>
+  </head>
+  <body>
+    <% include partials/menu %>
+
+    <div class="container">    
+        <h2>CONTACT MESSAGES</h2>
+        <% posts.forEach(function(post) { %>
+
+          <h4>Name: <%=post.name%></h4>
+          <h4>Message: <%=post.message%></h4>
+
+        <% }) %>
+
+
+
+        <a class="btn btn-primary" href="/contact" role="button">Add more</a>
+        </div>
+
+  </body>
+  <% include partials/script %>
+</html>
