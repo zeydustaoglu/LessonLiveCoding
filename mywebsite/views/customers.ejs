@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include partials/head %>
+</head>
+
+<body>
+    <div class="container">
+        <% include partials/menu %>
+
+        <div class="container-fluid bg-3 text-center">
+            <br><br>
+            <h3><%= page %></h3><br>
+            <ul class="list-group">
+                    <% for (let i = 0; i < customers.length; i++)  { %>
+
+                        <li class="list-group-item">Company Name: <%=customers[i]%></li>                        
+              
+                      <% } %>     
+             
+            </ul>
+          </div>
+
+</body>
+<% include partials/script %>
+
+</html>
